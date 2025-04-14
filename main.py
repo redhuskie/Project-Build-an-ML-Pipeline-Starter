@@ -49,7 +49,7 @@ def go(config: DictConfig):
                     "artifact_description": "Raw file as downloaded"
                 },
             )
-
+        # Configure in git hub. 
         if "basic_cleaning" in active_steps:
             ##################
             # Implement here #
