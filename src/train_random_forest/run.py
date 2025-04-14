@@ -23,7 +23,7 @@ import wandb
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error
 from sklearn.pipeline import Pipeline, make_pipeline
-from mlflow.models import infer_signature
+
 
 def delta_date_feature(dates):
     """
@@ -99,11 +99,10 @@ def go(args):
     # HINT: use mlflow.sklearn.save_model
     # Use SKLearn save model to save the pipeline. 
     # Added mkflow.sklearn.save_model to save the model.
-    signature = infer_signature(X_train, sk_pipe.predict(X_train))
+   
     mlflow.sklearn.save_model(
         sk_pipe,
         "random_forest_dir",
-        signature=signature,
         input_example=X_train.iloc[:5]
 )
     ######################################
@@ -174,7 +173,7 @@ def get_inference_pipeline(rf_config, max_tfidf_features):
     non_ordinal_categorical_preproc = make_pipeline(
         # YOUR CODE HERE
         SimpleImputer(strategy="most_frequent"),
-        OneHotEncoder
+        OneHotEncoder()
     )
     ######################################
 
