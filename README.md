@@ -10,7 +10,7 @@ In this project you will build such a pipeline.
 
 ## Links for review
 - [Git Hub repository Code](https://github.com/redhuskie/Project-Build-an-ML-Pipeline-Starter)
-- [Git Hub Release](https://github.com/redhuskie/Project-Build-an-ML-Pipeline-Starter/releases/tag/1.0.2)
+- [Git Hub Release](https://github.com/redhuskie/Project-Build-an-ML-Pipeline-Starter/releases/tag/1.0.3)
 - [wandb work](https://wandb.ai/jdpickering1-western-governors-university/nyc_airbnb?nw=nwuserjdpickering1)
 
 
